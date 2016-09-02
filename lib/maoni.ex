@@ -1,4 +1,4 @@
-defmodule Feedbacker do
+defmodule Maoni do
   use Application
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
@@ -8,23 +8,23 @@ defmodule Feedbacker do
 
     children = [
       # Start the endpoint when the application starts
-      supervisor(Feedbacker.Endpoint, []),
+      supervisor(Maoni.Endpoint, []),
       # Start the Ecto repository
-      supervisor(Feedbacker.Repo, []),
+      supervisor(Maoni.Repo, []),
       # Here you could define other workers and supervisors as children
-      # worker(Feedbacker.Worker, [arg1, arg2, arg3]),
+      # worker(Maoni.Worker, [arg1, arg2, arg3]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Feedbacker.Supervisor]
+    opts = [strategy: :one_for_one, name: Maoni.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    Feedbacker.Endpoint.config_change(changed, removed)
+    Maoni.Endpoint.config_change(changed, removed)
     :ok
   end
 end

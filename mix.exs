@@ -1,8 +1,8 @@
-defmodule Feedbacker.Mixfile do
+defmodule Maoni.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :feedbacker,
+    [app: :maoni,
      version: "0.0.1",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
@@ -17,7 +17,7 @@ defmodule Feedbacker.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {Feedbacker, []},
+    [mod: {Maoni, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex, :httpoison]]
   end

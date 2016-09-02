@@ -1,4 +1,4 @@
-defmodule Feedbacker.ErrorHelpers do
+defmodule Maoni.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -26,10 +26,10 @@ defmodule Feedbacker.ErrorHelpers do
     #
     #     dngettext "errors", "1 file", "%{count} files", count
     #
-    Gettext.dngettext(Feedbacker.Gettext, "errors", msg, msg, opts[:count], opts)
+    Gettext.dngettext(Maoni.Gettext, "errors", msg, msg, opts[:count], opts)
   end
 
   def translate_error(msg) do
-    Gettext.dgettext(Feedbacker.Gettext, "errors", msg)
+    Gettext.dgettext(Maoni.Gettext, "errors", msg)
   end
 end

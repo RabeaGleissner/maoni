@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :feedbacker, Feedbacker.Endpoint,
+config :maoni, Maoni.Endpoint,
   url: [host: "10.0.0.35"],
   root: Path.dirname(__DIR__),
   secret_key_base: "7pDDNhOiNJAlOoZXUm0O71zaMHbul+MkLW5xTNDgyb6pQzRToSdnugtnUGXF/mqq",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: Feedbacker.PubSub,
+  pubsub: [name: Maoni.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

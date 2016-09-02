@@ -1,3 +1,3 @@
-defmodule Feedbacker.LayoutView do
-  use Feedbacker.Web, :view
+defmodule Maoni.LayoutView do
+  use Maoni.Web, :view
 end

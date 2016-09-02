@@ -1,4 +1,4 @@
-defmodule Feedbacker.PageControllerTest do
-  use Feedbacker.ConnCase
+defmodule Maoni.PageControllerTest do
+  use Maoni.ConnCase
 
 end

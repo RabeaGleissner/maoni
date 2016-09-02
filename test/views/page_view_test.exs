@@ -1,3 +1,3 @@
-defmodule Feedbacker.PageViewTest do
-  use Feedbacker.ConnCase, async: true
+defmodule Maoni.PageViewTest do
+  use Maoni.ConnCase, async: true
 end

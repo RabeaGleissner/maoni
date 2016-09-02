@@ -1,14 +1,14 @@
-defmodule Feedbacker.Endpoint do
-  use Phoenix.Endpoint, otp_app: :feedbacker
+defmodule Maoni.Endpoint do
+  use Phoenix.Endpoint, otp_app: :maoni
 
-  socket "/socket", Feedbacker.UserSocket
+  socket "/socket", Maoni.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :feedbacker, gzip: false,
+    at: "/", from: :maoni, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -32,8 +32,8 @@ defmodule Feedbacker.Endpoint do
 
   plug Plug.Session,
     store: :cookie,
-    key: "_feedbacker_key",
+    key: "_maoni_key",
     signing_salt: "YcZ75EdM"
 
-  plug Feedbacker.Router
+  plug Maoni.Router
 end

@@ -1,12 +1,12 @@
-defmodule Feedbacker.Web do
+defmodule Maoni.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Feedbacker.Web, :controller
-      use Feedbacker.Web, :view
+      use Maoni.Web, :controller
+      use Maoni.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule Feedbacker.Web do
     quote do
       use Phoenix.Controller
 
-      alias Feedbacker.Repo
+      alias Maoni.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import Feedbacker.Router.Helpers
-      import Feedbacker.Gettext
+      import Maoni.Router.Helpers
+      import Maoni.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule Feedbacker.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Feedbacker.Router.Helpers
-      import Feedbacker.ErrorHelpers
-      import Feedbacker.Gettext
+      import Maoni.Router.Helpers
+      import Maoni.ErrorHelpers
+      import Maoni.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule Feedbacker.Web do
     quote do
       use Phoenix.Channel
 
-      alias Feedbacker.Repo
+      alias Maoni.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
-      import Feedbacker.Gettext
+      import Maoni.Gettext
     end
   end
 

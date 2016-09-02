@@ -1,5 +1,5 @@
-defmodule Feedbacker.ErrorView do
-  use Feedbacker.Web, :view
+defmodule Maoni.ErrorView do
+  use Maoni.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

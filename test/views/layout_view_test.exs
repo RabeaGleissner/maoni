@@ -1,3 +1,3 @@
-defmodule Feedbacker.LayoutViewTest do
-  use Feedbacker.ConnCase, async: true
+defmodule Maoni.LayoutViewTest do
+  use Maoni.ConnCase, async: true
 end

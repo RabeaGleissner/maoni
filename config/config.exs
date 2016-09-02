@@ -7,7 +7,7 @@ use Mix.Config
 
 # Configures the endpoint
 config :feedbacker, Feedbacker.Endpoint,
-  url: [host: "localhost"],
+  url: [host: "10.0.0.35"],
   root: Path.dirname(__DIR__),
   secret_key_base: "7pDDNhOiNJAlOoZXUm0O71zaMHbul+MkLW5xTNDgyb6pQzRToSdnugtnUGXF/mqq",
   render_errors: [accepts: ~w(html json)],

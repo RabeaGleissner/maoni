@@ -1,1 +1,23 @@
-<h1>Hello world!</h1>
+<h1>MAONI</h1>
+
+<%= for apprentice <- [1,2,3] do %>
+  <section>
+    <h2>Apprentice <%= apprentice %></h2>
+    <img src="https://avatars2.githubusercontent.com/u/1850188?v=3&s=100" alt="apprentice face">
+    <div>
+      <h3>Blog posts</h3>
+      <ul>
+        <li><a href="#">My last blog post</a></li>
+        <li><a href="#">My second last blog post</a></li>
+        <li><a href="#">My third last blog post</a></li>
+      </ul>
+      <h3>Pull requests</h3>
+      <ul>
+        <li><a href="#">Adds computer player</a></li>
+        <li><a href="#">another PR</a></li>
+        <li><a href="#">Yet another PR</a></li>
+      </ul>
+      <button><a href="#">More details</a></button>
+    </div>
+  </section>
+<% end %>

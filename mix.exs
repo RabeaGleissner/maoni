@@ -19,7 +19,7 @@ defmodule Feedbacker.Mixfile do
   def application do
     [mod: {Feedbacker, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :httpoison]]
   end
 
   # Specifies which paths to compile per environment.
@@ -38,6 +38,7 @@ defmodule Feedbacker.Mixfile do
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
      {:feeder_ex, "~> 0.0.4"},
+     {:httpoison, "~> 0.9.1"}
    ]
   end
 

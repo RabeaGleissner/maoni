@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mollie's Blog</title>
+    <description>Blogging about my apprenticeship at 8th Light.
+</description>
+    <link>https://mollies.github.io//</link>
+    <atom:link href="https://mollies.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 24 Aug 2016 09:55:25 +0000</pubDate>
+    <lastBuildDate>Wed, 24 Aug 2016 09:55:25 +0000</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Day ninety seven</title>
+        <description>&lt;h2 id=&quot;android-java-jack-and-jill&quot;&gt;Android, Java, Jack and Jill&lt;/h2&gt;
+
+&lt;p&gt;I have had some troubles with Android, Java and Travis.  These three should get on.  Android and Java should get on perfectly, Java and Travis work, so why should they not all work together?&lt;/p&gt;
+
+&lt;p&gt;I have had some issues with them all, and I have learnt some things along the way.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 22 Aug 2016 00:00:00 +0000</pubDate>
+        <author>mollie@8thlight.com (Mollie Stephenson)</author>
+        <link>https://mollies.github.io//2016/08/22/day-ninety-six.html</link>
+        <guid isPermaLink="true">https://mollies.github.io//2016/08/22/day-ninety-six.html</guid>
+        
+        
+      </item>
+  </channel>
+</rss>

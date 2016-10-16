@@ -9,8 +9,6 @@ defmodule Maoni do
     children = [
       # Start the endpoint when the application starts
       supervisor(Maoni.Endpoint, []),
-      # Start the Ecto repository
-      supervisor(Maoni.Repo, []),
       # Here you could define other workers and supervisors as children
       # worker(Maoni.Worker, [arg1, arg2, arg3]),
     ]

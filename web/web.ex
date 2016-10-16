@@ -18,21 +18,12 @@ defmodule Maoni.Web do
 
   def model do
     quote do
-      use Ecto.Schema
-
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query, only: [from: 1, from: 2]
     end
   end
 
   def controller do
     quote do
       use Phoenix.Controller
-
-      alias Maoni.Repo
-      import Ecto
-      import Ecto.Query, only: [from: 1, from: 2]
 
       import Maoni.Router.Helpers
       import Maoni.Gettext
@@ -65,9 +56,6 @@ defmodule Maoni.Web do
     quote do
       use Phoenix.Channel
 
-      alias Maoni.Repo
-      import Ecto
-      import Ecto.Query, only: [from: 1, from: 2]
       import Maoni.Gettext
     end
   end

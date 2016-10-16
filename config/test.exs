@@ -8,12 +8,3 @@ config :maoni, Maoni.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :maoni, Maoni.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "maoni_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
